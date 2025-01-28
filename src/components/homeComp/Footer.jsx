@@ -80,7 +80,31 @@ const Footer = () => {
           </div>
 
           <p className="text-left md:text-center text-gray-600 mt-7">
-            Copyright @2025 Best Food Pvt Ltd. All Rights Reserved.
+            Copyright @2025 Best Food Pvt Ltd. All Rights Reserved. Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Voluptates est
+            doloribus illo sint laborum officia earum iusto dolorum aspernatur
+            hic molestias dolores, sapiente aliquam, dicta odit autem nam
+            nostrum. Non commodi facere, deleniti atque officiis numquam,
+            veritatis voluptatem quia harum iste earum molestiae beatae quasi
+            corrupti voluptate mollitia quaerat eveniet et a doloribus porro
+            architecto. Aperiam cumque optio voluptas aliquid dolores reiciendis
+            deserunt quae minima magni molestiae facere iure ducimus voluptates
+            cupiditate, impedit illum quis perspiciatis libero accusantium totam
+            possimus accusamus modi. Obcaecati sapiente tempore nemo quia eum
+            harum odio, pariatur neque nihil repellat quam deleniti blanditiis
+            adipisci at, qui, delectus quisquam ipsa nisi repudiandae illum eius
+            quidem? Est laboriosam autem aliquid soluta suscipit. Excepturi,
+            voluptatum? Fugiat, excepturi obcaecati. Dicta consequatur
+            blanditiis vel officia tenetur debitis quas expedita id,
+            necessitatibus molestiae ratione illum omnis sint eos fugit eligendi
+            ad fugiat incidunt similique provident in. Repudiandae ab assumenda,
+            temporibus magnam, quaerat voluptatem cumque tempore laborum
+            sapiente, saepe dicta nobis obcaecati at dolores et ipsa impedit
+            repellendus quod adipisci ea corrupti incidunt illo laudantium
+            cupiditate. Magni libero, numquam nisi veritatis et repellendus,
+            ducimus ratione vel temporibus voluptatibus cupiditate. Soluta,
+            aspernatur ipsa! Provident itaque libero quam atque a corporis
+            beatae ducimus recusandae impedit.
           </p>
         </div>
       </footer>
