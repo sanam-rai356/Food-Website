@@ -1,8 +1,7 @@
 import Footerimg from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedin } from "react-icons/fa6";
-import { FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
-import { SiYoutubemusic } from "react-icons/si";
+import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -31,14 +30,14 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/about"
-                    className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] text-[16px]"
+                    className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] hover:underline text-[16px]"
                   >
                     About Us
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] text-[16px]"
+                    className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] hover:underline text-[16px]"
                     to="/menu"
                   >
                     Our Menu
@@ -46,7 +45,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] text-[16px]"
+                    className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] hover:underline text-[16px]"
                     to="/service"
                   >
                     Our Services
@@ -54,7 +53,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] text-[16px]"
+                    className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] hover:underline text-[16px]"
                     to="/allergy"
                   >
                     Allergy Advice
@@ -69,17 +68,29 @@ const Footer = () => {
                 Follow Us
               </h3>
               <div className="flex justify-start md:justify-center gap-3 flex-wrap">
-                <FaFacebook className="cursor-pointer text-4xl text-[#7a7b7b] hover:text-[#1773EA]" />
-                <FaInstagramSquare className="cursor-pointer text-4xl text-[#7a7b7b] hover:text-[#E88042] " />
-                <FaLinkedin className="cursor-pointer text-4xl text-[#7a7b7b] hover:text-[#0A63BC]" />
-                <SiYoutubemusic className="cursor-pointer text-4xl text-[#7a7b7b] hover:text-[#FF0033]" />
-                <FaTwitterSquare className="cursor-pointer text-4xl text-[#7a7b7b] hover:text-[#1C9CEA]" />
+                <Link
+                  to="https://www.facebook.com/sanam.rai.79/"
+                  target="_blank"
+                >
+                  <FaFacebook className="text-5xl hover:text-[#0866FF] text-[#5b5d5f]" />
+                </Link>
+
+                <Link
+                  to="https://www.linkedin.com/in/sanam-rai-512818329/"
+                  target="_blank"
+                >
+                  <FaLinkedin className="text-5xl hover:text-[#0866FF]  text-[#5b5d5f]" />
+                </Link>
+
+                <Link to="https://www.instagram.com/" target="_blank">
+                  <FaInstagramSquare className="text-5xl hover:text-[#E91CA3] text-[#5b5d5f]" />
+                </Link>
               </div>
             </div>
             {/* third div */}
           </div>
 
-          <p className="text-left md:text-center text-gray-600 mt-7">
+          <p className="text-left md:text-center text-gray-600 mt-12">
             Copyright @2025 Best Food Pvt Ltd. All Rights Reserved.
           </p>
         </div>

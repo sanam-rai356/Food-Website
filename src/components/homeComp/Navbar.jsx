@@ -82,24 +82,6 @@ const Navbar = () => {
           )}
           {/* login/logout section */}
 
-          {isAuthenticated ? (
-            <li>
-              <Link
-                className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] text-[16px]"
-                to="/profile"
-              >
-                <img
-                  src={user.picture}
-                  alt={user.name}
-                  className="size-9 rounded-full border-[2px] border-black"
-                />
-              </Link>
-            </li>
-          ) : (
-            <FaUser />
-          )}
-          {/* user profile section */}
-
           <li className="relative">
             <Link
               className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] text-[16px]"
@@ -117,11 +99,6 @@ const Navbar = () => {
           </li>
         </ul>
         {/* first ul */}
-
-        <GiHamburgerMenu
-          onClick={() => setNav(false)}
-          className="text-4xl block  lg:hidden cursor-pointer"
-        />
 
         {nav ? (
           ""
@@ -184,18 +161,52 @@ const Navbar = () => {
         {/* second ul */}
 
         {/* hide part */}
-        <div className=" gap-5 items-center hidden lg:flex ">
-          <FaFacebook className="text-3xl text-[#5b5d5f]" />
-          <FaLinkedin className="text-3xl text-[#5b5d5f]" />
-          <FaInstagramSquare className="text-3xl text-[#5b5d5f]" />
+        <div className=" gap-5 items-center flex ">
+          <Link to="https://www.facebook.com/sanam.rai.79/" target="_blank">
+            <FaFacebook className="text-3xl lg:block hidden text-[#5b5d5f]" />
+          </Link>
+
+          <Link
+            to="https://www.linkedin.com/in/sanam-rai-512818329/"
+            target="_blank"
+          >
+            <FaLinkedin className="text-3xl lg:block hidden text-[#5b5d5f]" />
+          </Link>
+
+          <Link to="https://www.instagram.com/" target="_blank">
+            <FaInstagramSquare className="text-3xl lg:block hidden text-[#5b5d5f]" />
+          </Link>
+
           <Link
             className="bg-[#D95103] hover:bg-white hover:text-[#5b5d5f] border-[1.5px] border-[#D95103] text-white py-2 px-8 rounded-full text-lg"
             to="/contact"
           >
             Contact
           </Link>
+          {isAuthenticated ? (
+            <li>
+              <Link
+                className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] text-[16px]"
+                to="/profile"
+              >
+                <img
+                  src={user.picture}
+                  alt={user.name}
+                  className="size-9 rounded-full cursor-pointer border-[2px] border-black"
+                />
+              </Link>
+            </li>
+          ) : (
+            <FaUser className="text-2xl cursor-pointer" />
+          )}
+          {/* user profile section */}
         </div>
         {/* hide part */}
+
+        <GiHamburgerMenu
+          onClick={() => setNav(false)}
+          className="text-4xl block  lg:hidden cursor-pointer"
+        />
       </nav>
     </>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceQuery = () => {
   return (
@@ -10,9 +10,12 @@ const ServiceQuery = () => {
             If you have any queries, send us a message. Our friendly team would
             love to hear from you.
           </p>
-          <button className="bg-[#0C6967] hover:bg-[#124848] border-none px-12 py-[14px] text-white rounded-full text-xl">
+          <Link
+            to="/contact"
+            className="bg-[#0C6967] hover:bg-[#124848] border-none px-12 py-[14px] text-white rounded-full text-xl"
+          >
             Get In Touch
-          </button>
+          </Link>
         </div>
       </section>
     </>
