@@ -57,29 +57,6 @@ const Menu = () => {
             </div>
           )}
         </div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-        explicabo ipsum nisi. Quo exercitationem magni quas beatae quis nemo ea
-        sapiente, dolore, debitis fugiat consectetur aspernatur molestias omnis
-        expedita architecto delectus possimus officiis vitae doloribus
-        perspiciatis reiciendis. Ad consequuntur voluptates accusantium
-        laboriosam laborum qui, culpa vel molestiae perspiciatis dolorem ex,
-        eaque illo odit laudantium, recusandae aliquam. Provident ipsa
-        praesentium libero veniam, quis tempore mollitia impedit totam esse
-        ipsam voluptates repudiandae corrupti molestiae asperiores et dolore
-        fugiat eligendi distinctio quia? Amet necessitatibus dolor nemo nostrum
-        veniam ea praesentium aut, ex ab id cum, voluptate non? Dolorum aliquid
-        non quisquam repellat dolores dolorem perspiciatis dolor! Neque
-        doloribus culpa quae illo ab eveniet voluptates quisquam. Repudiandae
-        quis exercitationem quaerat dolorum omnis reiciendis harum, eaque
-        similique vitae magni. Incidunt voluptatibus officia nihil? Tempore
-        porro, praesentium deserunt sequi quia ipsum incidunt, doloribus quas
-        delectus accusamus odit. Rerum, tenetur. Minus possimus aliquid
-        nesciunt, voluptate laboriosam hic tempore reiciendis ratione ducimus ex
-        enim iste eius ullam eos aspernatur blanditiis pariatur? Dicta velit
-        accusamus vel quod, sequi nobis praesentium quam voluptatibus in facilis
-        sed nihil, vitae totam fugit eos atque laborum natus. Vel autem sint ad
-        sed, sit tenetur asperiores necessitatibus atque rem temporibus deleniti
-        laborum labore voluptate.
       </section>
     </>
   );
