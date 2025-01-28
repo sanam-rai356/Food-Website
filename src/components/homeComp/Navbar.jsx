@@ -163,18 +163,18 @@ const Navbar = () => {
         {/* hide part */}
         <div className=" gap-5 items-center flex ">
           <Link to="https://www.facebook.com/sanam.rai.79/" target="_blank">
-            <FaFacebook className="text-3xl lg:block hidden text-[#5b5d5f]" />
+            <FaFacebook className="text-3xl lg:block hidden hover:text-[#0866FF] text-[#5b5d5f]" />
           </Link>
 
           <Link
             to="https://www.linkedin.com/in/sanam-rai-512818329/"
             target="_blank"
           >
-            <FaLinkedin className="text-3xl lg:block hidden text-[#5b5d5f]" />
+            <FaLinkedin className="text-3xl lg:block hidden hover:text-[#0866FF] text-[#5b5d5f]" />
           </Link>
 
           <Link to="https://www.instagram.com/" target="_blank">
-            <FaInstagramSquare className="text-3xl lg:block hidden text-[#5b5d5f]" />
+            <FaInstagramSquare className="text-3xl lg:block hidden hover:text-[#E91CA3] text-[#5b5d5f]" />
           </Link>
 
           <Link
