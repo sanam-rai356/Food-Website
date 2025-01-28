@@ -19,6 +19,9 @@ const Menu = () => {
 
   return (
     <>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, magni?
+      Soluta perferendis ab iusto maiores nam similique aperiam inventore
+      quaerat.
       <section className="mt-[87px] py-10 main_padding ">
         <div className="w-full">
           <h3 className="text-center text-3xl mb-8 md:text-4xl font-semibold">
