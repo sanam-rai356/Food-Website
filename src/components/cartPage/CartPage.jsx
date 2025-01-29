@@ -102,7 +102,7 @@ const CartPage = () => {
               <button
                 className="bg-red-500 text-white py-3 px-10 rounded-md"
                 onClick={() => {
-                  dispatch({ type: "EmptyCart" });
+                  dispatch({ type: "ClearCart" });
                 }}
               >
                 Empty Cart
