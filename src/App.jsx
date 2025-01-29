@@ -20,6 +20,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/service" element={<Service />} />
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/protectedRoute" element={<ProtectedRoute />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
