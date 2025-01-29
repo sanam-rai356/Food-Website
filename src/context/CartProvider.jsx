@@ -37,7 +37,7 @@ const CartReducer = (state, action) => {
         const newCartItem = { ...action.payload, qty: 1 };
         const updateCartItems = [...state.CartItems, newCartItem];
 
-        // alert(${action.payload.name} Added to cart);
+        alert(`${action.payload.name} Added to cart`);
 
         return {
           ...state,
@@ -92,14 +92,14 @@ const CartReducer = (state, action) => {
 };
 
 export const CartProvider = ({ children }) => {
-  const [cartState, cartDispatch] = useReducer(CartReducer, initialState);
+  const [state, dispatch] = useReducer(CartReducer, initialState);
 
   useEffect(() => {
-    -localStorage.setItem("cart", JSON.stringify(cartState.CartItems));
-  }, [cartState.CartItems]);
+    -localStorage.setItem("cart", JSON.stringify(state.CartItems));
+  }, [state.CartItems]);
 
   return (
-    <CartContext.Provider value={{ cartState, cartDispatch }}>
+    <CartContext.Provider value={{ state, dispatch }}>
       {children}
     </CartContext.Provider>
   );
