@@ -20,7 +20,7 @@ const initialState = {
 const CartReducer = (state, action) => {
   console.log(action);
   switch (action.type) {
-    case "ADD_TO_CART": {
+    case "AddToCart": {
       const isExit = state.CartItems.find(
         (item) => item._id === action.payload._id
       );
