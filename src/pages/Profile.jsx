@@ -19,7 +19,7 @@ const Profile = () => {
             <h2 className="text-2xl font-semibold">{user.name}</h2>
             <p className="text-xl">Email: {user.email}</p>
             <button
-              className=" bg-gradient-to-r from-[#D43C3D] to-[#EC8F7A] border-none py-2 px-12 rounded-full text-lg shadow-sm"
+              className=" bg-gradient-to-r from-[#D43C3D] to-[#EC8F7A] border-none py-2 px-12 rounded-full text-lg shadow-sm text-white"
               onClick={() => {
                 logout();
               }}

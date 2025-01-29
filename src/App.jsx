@@ -37,7 +37,6 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/protectedRoute" element={<ProtectedRoute />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </>
   );
