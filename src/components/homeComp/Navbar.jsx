@@ -185,15 +185,13 @@ const Navbar = () => {
           </Link>
 
           {isAuthenticated ? (
-            <li>
-              <Link to="/profile">
-                <img
-                  src={user.picture}
-                  alt={user.name}
-                  className="size-9 rounded-full cursor-pointer border-[2px] border-black"
-                />
-              </Link>
-            </li>
+            <Link to="/profile">
+              <img
+                src={user.picture}
+                alt={user.name}
+                className="size-9 rounded-full cursor-pointer border-[2px] border-black"
+              />
+            </Link>
           ) : (
             <FaUser className="text-2xl cursor-pointer" />
           )}
