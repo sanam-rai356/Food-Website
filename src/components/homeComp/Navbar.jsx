@@ -183,12 +183,10 @@ const Navbar = () => {
           >
             Contact
           </Link>
+
           {isAuthenticated ? (
             <li>
-              <Link
-                className="font-semibold text-[#5b5d5f] hover:text-[#7f8182] text-[16px]"
-                to="/profile"
-              >
+              <Link to="/profile">
                 <img
                   src={user.picture}
                   alt={user.name}
