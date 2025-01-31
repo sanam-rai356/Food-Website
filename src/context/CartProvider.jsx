@@ -7,13 +7,13 @@ const initialState = {
     const cart = localStorage.getItem("cart");
     if (cart) {
       try {
-        return JSON.parse(cart);
+        return JSON.parse(cart); // Attempt to parse cart
       } catch (error) {
         console.error("Error parsing cart from localStorage:", error);
-        return [];
+        return []; // Return empty array if parsing fails
       }
     }
-    return [];
+    return []; // Return empty array if no cart is found
   })(),
 };
 
@@ -91,16 +91,24 @@ const CartReducer = (state, action) => {
   }
 };
 
+//  eslint-disable-next-line react/prop-types
 export const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(CartReducer, initialState);
 
   useEffect(() => {
-    -localStorage.setItem("cart", JSON.stringify(state.CartItems));
+    // Update localStorage whenever the CartItems state changes
+    localStorage.setItem("cart", JSON.stringify(state.CartItems));
   }, [state.CartItems]);
 
   return (
-    <CartContext.Provider value={{ state, dispatch }}>
-      {children}
-    </CartContext.Provider>
+    <>
+      <CartContext.Provider value={{ state, dispatch }}>
+        {children}
+      </CartContext.Provider>
+    </>
   );
 };
+
+//  export const CartProvider =({children})=>{
+
+// }
