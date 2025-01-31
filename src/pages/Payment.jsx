@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const Payment = () => {
   const location = useLocation();
-  // console.log(location.state);
+  console.log(location.state);
 
   let total_amount = location.state.reduce((acc, item) => {
     return acc + item.caloriesPerServing * item.qty;
@@ -23,8 +23,10 @@ const Payment = () => {
 
   return (
     <>
-      <section className="main_padding mt-[87px]">
-        <h1>Payment</h1>
+      <section className="main_padding mt-[87px] py-6">
+        <h1 className="text-center text-3xl font-bold text-[#EF4444]">
+          Payment
+        </h1>
 
         <form
           action="https://rc-epay.esewa.com.np/api/epay/main/v2/form"
@@ -108,12 +110,42 @@ const Payment = () => {
             required
           />
 
-          <h1>Total Amount : {total_amount}</h1>
-          <input
-            className="bg-orange-500 p-2 rounded-lg w-44 cursor-pointer text-white"
-            value="Confirm"
-            type="submit"
-          />
+          <div className="py-6 grid grid-cols-1 gap-10 lg:grid-cols-4 md:grid-cols-2">
+            {location.state.map((paymentItem) => {
+              return (
+                <>
+                  <div
+                    key={paymentItem.id}
+                    className="border-[1.5px] border-gray-300 rounded-md p-5 shadow-sm hover:shadow-md"
+                  >
+                    <img
+                      src={paymentItem.image}
+                      className="w-full rounded-md h-[160px] object-cover"
+                      alt={paymentItem.name}
+                    />
+                    <p className="my-1 text-lg font-semibold text-[#EF4444]">
+                      {paymentItem.name}
+                    </p>
+                    <p className="text-lg font-semibold text-[#1E7472]">
+                      Rs.{paymentItem.caloriesPerServing} /-
+                    </p>
+                  </div>
+                </>
+              );
+            })}
+          </div>
+
+          <div className="text-center">
+            <h3 className="mb-2 text-lg font-bold">
+              Total Amount :{" "}
+              <span className="text-[#1E7472]">Rs.{total_amount} /-</span>
+            </h3>
+            <input
+              className="bg-[#1E7472] hover:bg-[#165554] text-lg p-2 rounded-lg w-44 cursor-pointer text-white"
+              value="Confirm"
+              type="submit"
+            />
+          </div>
         </form>
       </section>
     </>

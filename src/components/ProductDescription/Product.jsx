@@ -59,9 +59,9 @@ const Product = () => {
                   </h4>
 
                   <div className="flex gap-3 flex-wrap">
-                    <button className="bordor-none bg-[#26ABD4] hover:bg-[#25829e] text-white py-2 px-12 text-lg rounded">
+                    {/* <button className="bordor-none bg-[#26ABD4] hover:bg-[#25829e] text-white py-2 px-12 text-lg rounded">
                       Buy Now
-                    </button>
+                    </button> */}
                     <button
                       onClick={() =>
                         dispatch({ type: "AddToCart", payload: singlePage })

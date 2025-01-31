@@ -18,7 +18,7 @@ const initialState = {
 };
 
 const CartReducer = (state, action) => {
-  console.log(action);
+  // console.log(action);
   switch (action.type) {
     case "AddToCart": {
       const isExit = state.CartItems.find(
@@ -34,7 +34,7 @@ const CartReducer = (state, action) => {
       } else {
         const newCartItem = { ...action.payload, qty: 1 };
         const updateCartItems = [...state.CartItems, newCartItem];
-        console.log(updateCartItems);
+        // console.log(updateCartItems);
 
         alert(`${action.payload.name} Added to cart`);
 
