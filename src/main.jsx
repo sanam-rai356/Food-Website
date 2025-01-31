@@ -18,3 +18,9 @@ createRoot(document.getElementById("root")).render(
     </Auth0Provider>
   </CartProvider>
 );
+
+// AddToCart
+// Increment
+// Decrement
+// Delete
+// ClearCart
