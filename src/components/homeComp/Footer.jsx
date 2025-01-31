@@ -6,7 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className="main_padding bg-[#c8c8c8] pt-24 pb-6">
+      <footer className="main_padding bg-[#dfdfdf] pt-24 pb-6">
         <div className="w-full">
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>

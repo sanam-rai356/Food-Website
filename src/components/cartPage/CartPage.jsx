@@ -47,7 +47,7 @@ const CartPage = () => {
                                   payload: { id: item.id },
                                 });
                               }}
-                              className="bg-red-500 mt-2 border-none text-white py-2 px-8 rounded-lg"
+                              className="bg-red-500 hover:bg-red-600 mt-2 border-none text-white py-2 px-8 rounded-lg"
                             >
                               Delete
                             </button>
@@ -94,13 +94,13 @@ const CartPage = () => {
               <NavLink
                 to="/payment"
                 state={[...CarItems]}
-                className="bg-black text-white py-3 px-7 rounded-md"
+                className="bg-black hover:bg-[#404040] text-white py-3 px-7 rounded-md"
               >
                 Proceed To Checkout ({TotalCartItems})
               </NavLink>
 
               <button
-                className="bg-red-500 text-white py-3 px-10 rounded-md"
+                className="bg-red-500 hover:bg-red-600 text-white py-3 px-10 rounded-md"
                 onClick={() => {
                   dispatch({ type: "ClearCart" });
                 }}
