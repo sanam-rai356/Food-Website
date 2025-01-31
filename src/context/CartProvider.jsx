@@ -36,12 +36,13 @@ const CartReducer = (state, action) => {
       } else {
         const newCartItem = { ...action.payload, qty: 1 };
         const updateCartItems = [...state.CartItems, newCartItem];
+        console.log(updateCartItems);
 
         alert(`${action.payload.name} Added to cart`);
 
         return {
           ...state,
-          CartItems: updateCartItems,
+          CartItems: [...updateCartItems],
         };
       }
     }
